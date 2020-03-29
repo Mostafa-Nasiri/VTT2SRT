@@ -17,10 +17,10 @@ for entry in os.scandir('.'):
 
          if (data[20]==62): #time format check
             for j in range(len(times)-1) :
-             s=s+str(j+1)+"\r\n"+'00:'+((data[times[j]+1:times[j]+23].decode(encoding='UTF-8')).replace('.',',')).replace('--> ','--> 00:')+"\r\n"+(data[times[j]+24:times[j+1]].decode(encoding='UTF-8'))+"\r\n"+"\r\n"
+             s=s+str(j+1)+"\r\n"+'00:'+((data[times[j]+1:times[j]+24].decode(encoding='UTF-8')).replace('.',',')).replace('--> ','--> 00:')+"\r\n"+(data[times[j]+25:times[j+1]].decode(encoding='UTF-8'))+"\r\n"+"\r\n"
          else:
              for j in range(len(times)-1) :
-              s=s+str(j+1)+"\r\n"+((data[times[j]+1:times[j]+30].decode(encoding='UTF-8')).replace('.',','))+"\r\n"+(data[times[j]+30:times[j+1]].decode(encoding='UTF-8'))+"\r\n"+"\r\n"
+              s=s+str(j+1)+"\r\n"+((data[times[j]+1:times[j]+30].decode(encoding='UTF-8')).replace('.',','))+"\r\n"+(data[times[j]+31:times[j+1]].decode(encoding='UTF-8'))+"\r\n"+"\r\n"
 
          fp = open(os.path.splitext(entry.name)[0]+".srt", "wb") #Write srt file
          fp.write(s.encode('utf-8'))
