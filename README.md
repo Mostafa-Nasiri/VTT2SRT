@@ -1,2 +1,2 @@
 # VTT2SRT
-Converts Every VTT subtitles into SRT subtitles in Same Directory.
+Converts subtitles in VTT format to SRT format.
