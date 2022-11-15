@@ -7,6 +7,6 @@ This project is written in Python 3.8.5 and Shell scripts. However, to install a
 
 ### How to run
 ```bash
-Copy  VTT Folder
-python main.py 
+Copy vtt2srt.py to Your VTT Folder
+python vtt2srt.py 
 ```
